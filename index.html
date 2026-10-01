@@ -16,6 +16,7 @@
     --pink: #FF6B9D;
     --rose: #C74B7C;
     --teal: #4ECDC4;
+    --soft-navy: #4A5D8A;
     --cream: #FFF6E0;
     --white: #FFFDF5;
   }
@@ -51,13 +52,21 @@
     letter-spacing: 3px;
     line-height: 1.5;
   }
-  .presents {
+  .sangath {
     font-family: 'Press Start 2P', monospace;
     font-size: clamp(10px, 1.6vw, 13px);
     color: var(--navy);
-    opacity: 0.7;
-    letter-spacing: 5px;
-    margin: 18px 0 22px;
+    letter-spacing: 4px;
+    margin: 14px 0 10px;
+    line-height: 1.6;
+  }
+  .presents {
+    font-family: 'Press Start 2P', monospace;
+    font-size: clamp(10px, 1.6vw, 13px);
+    color: var(--soft-navy);
+    letter-spacing: 4px;
+    margin: 0 0 22px;
+    line-height: 1.6;
   }
   h1 {
     font-family: 'Press Start 2P', monospace;
@@ -487,40 +496,6 @@
     box-shadow: 2px 2px 0 var(--navy);
   }
 
-  footer {
-    margin-top: 50px;
-    padding: 28px 24px;
-    border: 3px solid var(--navy);
-    background: var(--white);
-    box-shadow: 7px 7px 0 var(--navy);
-    text-align: center;
-  }
-  footer p {
-    font-family: 'Press Start 2P', monospace;
-    font-size: 12px;
-    color: var(--navy);
-    line-height: 1.6;
-    letter-spacing: 1.5px;
-  }
-  footer .footer-line {
-    display: block;
-    margin-bottom: 8px;
-    font-family: 'Press Start 2P', monospace;
-    font-size: 12px;
-    line-height: 1.6;
-    letter-spacing: 1.5px;
-    color: var(--navy);
-  }
-  footer .footer-line:last-child { margin-bottom: 0; }
-  footer .footer-pink {
-    color: var(--pink);
-  }
-  footer .footer-dark {
-    color: var(--navy);
-    font-weight: 700;
-    text-shadow: 2px 2px 0 rgba(27, 42, 94, 0.18);
-  }
-
   /* Tab visibility rules */
   #hall-all:checked ~ .wrap .hall-section { display: block; }
 
@@ -550,7 +525,8 @@
     .hero { margin-bottom: 36px; }
     h1 { text-shadow: 4px 4px 0 var(--pink); }
     .yfmh { letter-spacing: 1.5px; }
-    .presents { letter-spacing: 3px; margin: 12px 0 16px; }
+    .sangath { letter-spacing: 3px; margin: 12px 0 8px; }
+    .presents { letter-spacing: 3px; margin: 0 0 16px; }
 
     .tabs { gap: 8px; padding-bottom: 22px; margin-bottom: 30px; justify-content: center; }
     .tab {
@@ -618,10 +594,6 @@
       min-width: 0;
       line-height: 1.4;
     }
-
-    footer { margin-top: 36px; padding: 22px 18px; }
-    footer p { font-size: 10px; line-height: 1.6; }
-    footer .footer-line { font-size: 10px; line-height: 1.6; letter-spacing: 1.2px; margin-bottom: 6px; }
   }
 
   @media (max-width: 380px) {
@@ -651,7 +623,8 @@
 <div class="wrap">
 <header class="hero">
 <p class="yfmh">YOUTH FOR MENTAL HEALTH</p>
-<p class="presents">PRESENTS</p>
+<p class="sangath">IN ASSOCIATION WITH SANGATH</p>
+<p class="presents">★ PRESENTS ★</p>
 <h1>CONFAB 2026</h1>
 </header>
 <nav class="tabs">
@@ -1067,7 +1040,7 @@
 <span class="badge badge-talks">TALK</span>
 </div>
 <h3 class="title">The NCAHP &amp; RCI Lore Drop: Decoding the latest guidelines for aspiring practitioners</h3>
-<p class="speaker">Vidhi Ghai <span class="role">(Counselling Psychologist and Educator)</span></p>
+<p class="speaker">Vidhi Ghal <span class="role">(Counselling Psychologist and Educator)</span></p>
 </summary>
 <div class="card-desc"></div>
 </details>
@@ -1149,13 +1122,6 @@
       OUR INSTAGRAM
     </a>
 </div>
-<footer>
-<p>
-<span class="footer-line">YOUTH FOR MENTAL HEALTH</span>
-<span class="footer-line footer-pink">IN ASSOCIATION WITH SANGATH</span>
-<span class="footer-line footer-dark">★ PRESENTS CONFAB 2026 ★</span>
-</p>
-</footer>
 </div>
 <script>
 (function () {
